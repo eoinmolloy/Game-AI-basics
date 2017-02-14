@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SimplePath_Random.cs">
+    <Files>
+      <File FileName="Assets/Scripts/SimplePath_Random.cs" Line="93" Column="1" />
+      <File FileName="Assets/Scripts/SimplePath_A.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/RollerBall/Scripts/BallUserControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SimplePath_B.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
