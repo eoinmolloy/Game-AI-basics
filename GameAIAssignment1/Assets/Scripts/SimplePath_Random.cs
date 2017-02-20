@@ -59,7 +59,7 @@ public class SimplePath_Random : MonoBehaviour {
 			} 
 		}
 	}
-
+	//Method to follow player
 	void followPlayer(){
 		seePlayers = true;
 		GameObject t1 = GameObject.Find ("Player");
@@ -99,7 +99,7 @@ public class SimplePath_Random : MonoBehaviour {
 				}
 			}
 			seePlayer ();
-
+			hearPlayer ();
 		}
 	}
 
@@ -132,7 +132,7 @@ public class SimplePath_Random : MonoBehaviour {
 			Destroy (t1);
 			crumbNum--;
 			if (crumbNum == 1) {
-				state = 1;
+				state = 3;
 			}
 
 		}
@@ -158,7 +158,7 @@ public class SimplePath_Random : MonoBehaviour {
 			break;
 		case 3:
 			patrol ();
-			print ("Idle");
+			print ("Patrol");
 			break;
 		case 2:
 			followPlayer ();
@@ -166,11 +166,11 @@ public class SimplePath_Random : MonoBehaviour {
 			break;
 		case 1:
 			idle ();
+			print ("Patrol");
 			break;
 		default:
 			print ("Incorrect intelligence level.");
 			break;
 		}
-		checkWalls ();
 	}
 }

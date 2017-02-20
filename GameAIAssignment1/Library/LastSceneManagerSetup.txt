@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Level1_PathFinding.unity
+- path: Assets/Level4_AdditionalFeatures.unity
   isLoaded: 1
   isActive: 1
