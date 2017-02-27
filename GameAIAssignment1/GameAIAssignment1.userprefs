@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Type4_AI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GrenadeThrow.cs">
     <Files>
-      <File FileName="Assets/Scripts/Type3_AI.cs" Line="183" Column="71" />
-      <File FileName="Assets/Scripts/PlayerDropBC.cs" Line="26" Column="18" />
-      <File FileName="Assets/Scripts/Type4_AI.cs" Line="131" Column="62" />
+      <File FileName="Assets/Scripts/NavMeshFollow.cs" Line="17" Column="50" />
+      <File FileName="Assets/Scripts/GrenadeThrow.cs" Line="22" Column="5" />
+      <File FileName="Assets/Scripts/Type3_AI.cs" Line="155" Column="44" />
+      <File FileName="Assets/Scripts/Launcher.cs" Line="6" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

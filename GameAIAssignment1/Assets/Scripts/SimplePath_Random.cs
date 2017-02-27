@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SimplePath_Random : MonoBehaviour {
 	float timer;
@@ -66,7 +67,7 @@ public class SimplePath_Random : MonoBehaviour {
 		if (seePlayers == true) {
 			transform.LookAt (t1.transform);
 			timer = Time.deltaTime;
-			transform.Translate (Vector3.forward * timer * 4);
+			transform.Translate (Vector3.forward * timer * 2);
 
 			dropTime += Time.deltaTime;
 			print (dropTime);
@@ -77,7 +78,9 @@ public class SimplePath_Random : MonoBehaviour {
 				dropTime = 0.0f;
 				print ("drop crumb");
 			}
-
+			if (Vector3.Distance (transform.position, t1.transform.position) < 1) {
+				SceneManager.LoadScene ("Level1DeathScene");
+			}
 			if (Vector3.Distance (transform.position, t1.transform.position) > 10) {
 				state = 4;
 			}

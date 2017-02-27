@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Type4_AI : MonoBehaviour {
 
@@ -84,7 +85,9 @@ public class Type4_AI : MonoBehaviour {
 				dropBreadcrumb ();
 				dropTime = 0.0f;
 			}
-
+			if (Vector3.Distance (transform.position, t1.transform.position) < 1.5f) {
+				SceneManager.LoadScene ("Level3DeathScene");
+			}
 			if (Vector3.Distance (transform.position, t1.transform.position) > 10) {
 				checkBreadcrumbs = true;
 			}

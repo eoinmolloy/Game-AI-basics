@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Type3_AI : MonoBehaviour {
 
@@ -74,7 +76,7 @@ public class Type3_AI : MonoBehaviour {
 		if (seePlayers == true) {
 			transform.LookAt (t1.transform);
 			timer = Time.deltaTime;
-			transform.Translate (Vector3.forward * timer * 4);
+			transform.Translate (Vector3.forward * timer * 3);
 
 			dropTime += Time.deltaTime;
 			//checkWalls ();
@@ -83,7 +85,9 @@ public class Type3_AI : MonoBehaviour {
 				dropBreadcrumb ();
 				dropTime = 0.0f;
 			}
-
+			if (Vector3.Distance (transform.position, t1.transform.position) < 1.5f) {
+				SceneManager.LoadScene ("Level2DeathScene");
+			}
 			if (Vector3.Distance (transform.position, t1.transform.position) > 10) {
 				checkBreadcrumbs = true;
 			}

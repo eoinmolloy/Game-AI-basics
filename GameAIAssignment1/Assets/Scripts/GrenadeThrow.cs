@@ -3,32 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GrenadeThrow : MonoBehaviour {
-	float radius = 5.0f;
-	float power = 10.0f;
-	float explosionDelay = 1.0f;
-	float lift = 5.0f;
+	public GameObject prefab;
+
 	// Use this for initialization
 	void Start () {
-		StartCoroutine ("waitSeconds");
-		Vector3 grenadePos = transform.position;
-		Collider[] hitColliders = Physics.OverlapSphere(grenadePos, radius);
-
-		foreach(Collider hitCol in hitColliders){
-			Rigidbody rb = hitCol.GetComponent<Rigidbody>();
-
-			if (rb != null) {
-				rb.AddExplosionForce (power, grenadePos, radius, 3.0F);
-				Destroy (gameObject);
-			}
-		}
+		
 	}
-
-	IEnumerator waitSeconds(){
-		yield return new WaitForSeconds (1.5f);
-	}
-	
+		
 	// Update is called once per frame
 	void Update () {
 		
+		if (Input.GetKeyDown (KeyCode.G)) {
+			GameObject grenade = Instantiate (prefab) as GameObject;
+			grenade.transform.position = transform.position + Camera.main.transform.forward;
+			Rigidbody rb = grenade.GetComponent<Rigidbody> ();
+			rb.velocity = Camera.main.transform.forward * 20;
+		}
 	}
 }

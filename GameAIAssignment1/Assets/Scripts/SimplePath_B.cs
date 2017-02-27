@@ -57,7 +57,7 @@ public class SimplePath_B : MonoBehaviour {
 		if (seePlayers == true) {
 			transform.LookAt (t1.transform);
 			timer = Time.deltaTime;
-			transform.Translate (Vector3.forward * timer * 4);
+			transform.Translate (Vector3.forward * timer * 2);
 
 			dropTime += Time.deltaTime;
 			print (dropTime);

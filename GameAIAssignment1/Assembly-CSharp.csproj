@@ -47,15 +47,23 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Campfire Pack\Script\SwitchView.cs" />
+     <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\GrenadeThrow.cs" />
      <Compile Include="Assets\Scripts\Launcher.cs" />
+     <Compile Include="Assets\Scripts\Lvl1GameOver.cs" />
      <Compile Include="Assets\Scripts\NavMeshFollow.cs" />
+     <Compile Include="Assets\Scripts\NavMeshHitPlayer.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollect.cs" />
+     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\PlayerDropBC.cs" />
      <Compile Include="Assets\Scripts\SimplePath_A.cs" />
      <Compile Include="Assets\Scripts\SimplePath_B.cs" />
      <Compile Include="Assets\Scripts\SimplePath_Random.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\Type3_AI.cs" />
      <Compile Include="Assets\Scripts\Type4_AI.cs" />
+     <Compile Include="Assets\grenade.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
